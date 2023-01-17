@@ -39,7 +39,7 @@ Fact tables are so massive that they should only allow append-type functionality
 
   - Fact Table:
 
-    -```songplays``` Represents the metrics used for the song plays analytics.
+    - ```songplays``` Represents the metrics used for the song plays analytics.
       - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent.
 
   - Dimension Tables:
