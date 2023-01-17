@@ -19,7 +19,7 @@ The source datasets consist of JSON logs that tell about user activity in the ap
 
 In this project, I built four different operators that will stage the data, transform the data, and run checks on data quality.
 
-- Stage Operator:
+### Stage Operator:
 
 The staging operator's job is to load any JSON formatted files from S3 to Amazon Redshift.
 The operator creates and runs a SQL COPY statement based on the parameters provided.
@@ -28,7 +28,7 @@ The operator's parameters specify where in S3 the file is loaded and what is the
 The parameters are used to distinguish between JSON files. 
 The staging operator also contains a templated field that allows it to load timestamped files from S3 based on the execution time and run backfills.
 
-- Fact and Dimension Operators:
+### Fact and Dimension Operators:
 
 The fact and dimension operator's job is to take as input a SQL statement and target database on which to run the query. 
 Also, there is the target table that will contain the results of the transformation.
@@ -53,7 +53,7 @@ Fact tables are so massive that they should only allow append-type functionality
       - start_time, hour, day, week, month, year, weekday
     
 
-- Data Quality Operator:
+### Data Quality Operator:
 
 The data quality operator's job is used to run checks on the data itself.
 The operator's main functionality is to receive one or more SQL-based test cases along with the expected results and execute the tests.
