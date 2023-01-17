@@ -37,12 +37,12 @@ Dimension loads are done with the truncate-insert pattern where the target table
 So, there is a parameter that allows switching between insert modes when loading dimensions.
 Fact tables are so massive that they should only allow append-type functionality.
 
-  -- Fact Table:
+  - Fact Table:
 
-    - ```songplays``` Represents the metrics used for the song plays analytics.
+    -```songplays``` Represents the metrics used for the song plays analytics.
       - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent.
 
-  -- Dimension Tables:
+  - Dimension Tables:
     - ```users``` The data of the users that registered in the application.
       - user_id, first_name, last_name, gender, level
     - ```songs``` The data about songs in the music database.
